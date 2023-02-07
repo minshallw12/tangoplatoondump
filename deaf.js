@@ -13,7 +13,7 @@ function canHear (speech) {
             console.log(char)
             for (let j=0; j<cantHear.length; j++) {
                 let letter = cantHear[j];
-                if (letter == char) {
+                if (letter === char) {
                     return false;
                 }
             }}}
@@ -36,7 +36,7 @@ function response(speech) {
             console.log(char)
             for (let j=0; j<cantHear.length; j++) {
                 let letter = cantHear[j];
-                if (char == letter) {
+                if (char === letter) {
                     answer = prompt('SPEAK UP KID!\n');
                     response(answer);
                 } else {
@@ -52,10 +52,10 @@ function response(speech) {
 function deafGrandma() {
     let speech = prompt("HEY KID!\n");
     let heard = canHear(speech);
-    if (heard == true) {
-        if (heard == 'GOODBYE!') {
+    if (heard === true) {
+        if (heard === 'GOODBYE!') {
             let answer = prompt('LEAVING SO SOON? \n')
-            if (answer == 'GOODBYE!') {
+            if (answer === 'GOODBYE!') {
                 return 'LATER, SKATER!'
             }
             response(speech)
