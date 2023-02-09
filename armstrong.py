@@ -23,3 +23,16 @@
 
 # print(anagrams_for('target', ['artget']))
 
+def sum_pairs(list,sum):
+    result=[]
+    for i in range(len(list)):
+        for j in range(i):
+            if list[i]+list[j]==sum:
+                result.append([list[i], list[j]])
+    return result
+
+print(sum_pairs([1,2,3,4,5], 9)) # [[4,5]]
+print(sum_pairs([1,2,3,4,5], 7)) # [[2,5], [3,4]]
+print(sum_pairs([3, 1, 5, 8, 2], 27))
+
+print(range(0,2,1))
