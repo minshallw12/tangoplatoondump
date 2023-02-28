@@ -20,7 +20,7 @@ class LinkList:
       while currentNode.nextNode != None:
         currentNode = currentNode.nextNode
       currentNode.nextNode = Node(data)
-      self.length += 1
+    self.length += 1
 
     # write your code to ADD an element to the Linked List
     # self.length += 1
@@ -54,7 +54,7 @@ class LinkList:
       if element_to_get == currentNode.nextNode.value:
         return currentNode.nextNode.value
       currentNode = currentNode.nextNode
-        
+      break
 
 
 
